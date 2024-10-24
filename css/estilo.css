@@ -1,0 +1,111 @@
+html,body{
+    height:100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 1
+}
+header{
+    background-color:rgb(241, 220, 242);
+    min-height:80px;
+    display: flex;
+    width: 100%;
+}
+main{
+    flex: 1;
+    display: flex;
+}
+article,section{
+    flex: 3;
+    background-color:rgb(202, 235, 250);
+}
+aside{
+    flex: 1;
+    background-color:rgb(240, 189, 204);
+}
+footer{
+    background-color: #444;
+    color: #e1e1e1;
+    height:120px;
+    margin-top: auto;
+}
+
+h1{
+    flex: 2;
+}
+#identidad{
+    flex: 1;
+    text-align: right;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    background: #efefef;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=time],
+textarea,
+input[type=submit] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+input[type=submit] {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #4cae4c;
+}
+
+
+.filadato{
+	display: flex;
+}
+.cajadato0{
+	flex:1;
+}
+.cajadato1{
+	flex:5;
+}
+.cajadato2{
+	flex:20;
+}
+.filadato:nth-child(odd){
+    background-color: #fff;
+}
+.filadato:nth-child(even){
+    background-color: #DBFFFF;
+}
+.filadato:hover{
+	background-color: #FF8000;
+}
+
+.celdaClickeable:hover, .celdaObservaciones:hover{
+	cursor: pointer;
+}
